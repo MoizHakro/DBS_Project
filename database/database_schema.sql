@@ -1,4 +1,10 @@
 -- ==========================================
+-- PART 0: CREATE AND SELECT THE DATABASE
+-- ==========================================
+CREATE DATABASE IF NOT EXISTS MovieManagement;
+USE MovieManagement;
+
+-- ==========================================
 -- PART 1: THE PARENT TABLES
 -- ==========================================
 

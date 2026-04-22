@@ -1,12 +1,13 @@
 -- ==========================================
--- 1. THE FOUNDATION: GENRES 
+-- 1. THE FOUNDATION: GENRES (12 Total)
 -- ==========================================
 INSERT INTO Genres (GenreName) VALUES 
 ('Action'), ('Sci-Fi'), ('Crime'), ('Drama'), ('Thriller'), 
-('Romance'), ('Fantasy'), ('Adventure'), ('Comedy'), ('Mystery');
+('Romance'), ('Fantasy'), ('Adventure'), ('Comedy'), ('Mystery'),
+('Horror'), ('Western');
 
 -- ==========================================
--- 2. THE FOUNDATION: DIRECTORS (12 Total)
+-- 2. THE FOUNDATION: DIRECTORS (38 Total)
 -- ==========================================
 INSERT INTO Directors (FullName, BirthDate) VALUES 
 ('Christopher Nolan', '1970-07-30'),    -- 1
@@ -20,10 +21,36 @@ INSERT INTO Directors (FullName, BirthDate) VALUES
 ('Denis Villeneuve', '1967-10-03'),     -- 9
 ('Ridley Scott', '1937-11-30'),         -- 10
 ('Lana Wachowski', '1965-06-21'),       -- 11
-('Damien Chazelle', '1985-01-19');      -- 12
+('Damien Chazelle', '1985-01-19'),      -- 12
+('Francis Ford Coppola', '1939-04-07'), -- 13
+('George Lucas', '1944-05-14'),         -- 14
+('Sam Mendes', '1965-08-01'),           -- 15
+('Paul Thomas Anderson', '1970-06-26'), -- 16
+('Wes Anderson', '1969-05-01'),         -- 17
+('Stanley Kubrick', '1928-07-26'),      -- 18
+('Clint Eastwood', '1930-05-31'),       -- 19
+('Alfonso Cuarón', '1961-11-28'),       -- 20
+('Alejandro G. Iñárritu', '1963-08-15'),-- 21
+('Guillermo del Toro', '1964-10-09'),   -- 22
+('Bong Joon Ho', '1969-09-14'),         -- 23
+('Joel Coen', '1954-11-29'),            -- 24
+('Taika Waititi', '1975-08-16'),        -- 25
+('Rian Johnson', '1973-12-17'),         -- 26
+('James Gunn', '1966-08-05'),           -- 27
+('Todd Phillips', '1970-12-20'),        -- 28
+('Jordan Peele', '1979-02-21'),         -- 29
+('Jon Favreau', '1966-10-19'),          -- 30
+('Joss Whedon', '1964-06-23'),          -- 31
+('Anthony Russo', '1970-02-03'),        -- 32
+('Ryan Coogler', '1986-05-23'),         -- 33
+('Jon Watts', '1981-06-28'),            -- 34
+('Matt Reeves', '1966-04-27'),          -- 35
+('George Miller', '1945-03-03'),        -- 36
+('Martin Campbell', '1943-10-24'),      -- 37
+('J.J. Abrams', '1966-06-27');          -- 38
 
 -- ==========================================
--- 3. THE FOUNDATION: ACTORS (25 Total)
+-- 3. THE FOUNDATION: ACTORS (100 Total)
 -- ==========================================
 INSERT INTO Actors (FullName, BirthDate, PhotoURL) VALUES 
 ('Leonardo DiCaprio', '1974-11-11', 'images/leo.jpg'),        -- 1
@@ -50,13 +77,88 @@ INSERT INTO Actors (FullName, BirthDate, PhotoURL) VALUES
 ('Ryan Gosling', '1980-11-12', 'images/gosling.jpg'),         -- 22
 ('Keanu Reeves', '1964-09-02', 'images/reeves.jpg'),          -- 23
 ('Tom Cruise', '1962-07-03', 'images/cruise.jpg'),            -- 24
-('Natalie Portman', '1981-06-09', 'images/portman.jpg');      -- 25
+('Natalie Portman', '1981-06-09', 'images/portman.jpg'),      -- 25
+('Tom Hardy', '1977-09-15', 'images/hardy.jpg'),              -- 26
+('Harrison Ford', '1942-07-13', 'images/ford.jpg'),           -- 27
+('Mark Hamill', '1951-09-25', 'images/hamill.jpg'),           -- 28
+('Carrie Fisher', '1956-10-21', 'images/fisher.jpg'),         -- 29
+('Al Pacino', '1940-04-25', 'images/pacino.jpg'),             -- 30
+('Marlon Brando', '1924-04-03', 'images/brando.jpg'),         -- 31
+('Daniel Day-Lewis', '1957-04-29', 'images/daylewis.jpg'),    -- 32
+('Joaquin Phoenix', '1974-10-28', 'images/phoenix.jpg'),      -- 33
+('Russell Crowe', '1964-04-07', 'images/crowe.jpg'),          -- 34
+('Hugh Jackman', '1968-10-12', 'images/jackman.jpg'),         -- 35
+('Ryan Reynolds', '1976-10-23', 'images/reynolds.jpg'),       -- 36
+('Robert Downey Jr.', '1965-04-04', 'images/downeyjr.jpg'),   -- 37
+('Chris Evans', '1981-06-13', 'images/evans.jpg'),            -- 38
+('Chris Hemsworth', '1983-08-11', 'images/hemsworth.jpg'),    -- 39
+('Mark Ruffalo', '1967-11-22', 'images/ruffalo.jpg'),         -- 40
+('Chris Pratt', '1979-06-21', 'images/pratt.jpg'),            -- 41
+('Zoe Saldana', '1978-06-19', 'images/saldana.jpg'),          -- 42
+('Bradley Cooper', '1975-01-05', 'images/cooper.jpg'),        -- 43
+('Johnny Depp', '1963-06-09', 'images/depp.jpg'),             -- 44
+('Helena Bonham Carter', '1966-05-26', 'images/carter.jpg'),  -- 45
+('Ralph Fiennes', '1962-12-22', 'images/fiennes.jpg'),        -- 46
+('Gary Oldman', '1958-03-21', 'images/oldman.jpg'),           -- 47
+('Michael Caine', '1933-03-14', 'images/caine.jpg'),          -- 48
+('Heath Ledger', '1979-04-04', 'images/ledger.jpg'),          -- 49
+('Guy Pearce', '1967-10-05', 'images/pearce.jpg'),            -- 50
+('Carrie-Anne Moss', '1967-08-21', 'images/moss.jpg'),        -- 51
+('Laurence Fishburne', '1961-07-30', 'images/fishburne.jpg'), -- 52
+('Hugo Weaving', '1960-04-04', 'images/weaving.jpg'),         -- 53
+('Ian McKellen', '1939-05-25', 'images/mckellen.jpg'),        -- 54
+('Viggo Mortensen', '1958-10-20', 'images/mortensen.jpg'),    -- 55
+('Cate Blanchett', '1969-05-14', 'images/blanchett.jpg'),     -- 56
+('Andy Serkis', '1964-04-20', 'images/serkis.jpg'),           -- 57
+('Willem Dafoe', '1955-07-22', 'images/dafoe.jpg'),           -- 58
+('Tobey Maguire', '1975-06-27', 'images/maguire.jpg'),        -- 59
+('Tom Holland', '1996-06-01', 'images/holland.jpg'),          -- 60
+('Benedict Cumberbatch', '1976-07-19', 'images/cumberbatch.jpg'), -- 61
+('Chadwick Boseman', '1976-11-29', 'images/boseman.jpg'),     -- 62
+('Daniel Craig', '1968-03-02', 'images/craig.jpg'),           -- 63
+('Javier Bardem', '1969-03-01', 'images/bardem.jpg'),         -- 64
+('Christoph Waltz', '1956-10-04', 'images/waltz.jpg'),        -- 65
+('Jamie Foxx', '1967-12-13', 'images/foxx.jpg'),              -- 66
+('Uma Thurman', '1970-04-29', 'images/thurman.jpg'),          -- 67
+('Bruce Willis', '1955-03-19', 'images/willis.jpg'),          -- 68
+('Edward Norton', '1969-08-18', 'images/norton.jpg'),         -- 69
+('Matthew McConaughey', '1969-11-04', 'images/mcconaughey.jpg'), -- 70
+('Jessica Chastain', '1977-03-24', 'images/chastain.jpg'),    -- 71
+('Song Kang-ho', '1967-01-17', 'images/song.jpg'),            -- 72
+('Colin Firth', '1960-09-10', 'images/firth.jpg'),            -- 73
+('Daniel Kaluuya', '1989-02-24', 'images/kaluuya.jpg'),       -- 74
+('Oscar Isaac', '1979-03-09', 'images/isaac.jpg'),            -- 75
+('Adam Driver', '1983-11-19', 'images/driver.jpg'),           -- 76
+('Daisy Ridley', '1992-04-10', 'images/ridley.jpg'),          -- 77
+('John Boyega', '1992-03-17', 'images/boyega.jpg'),           -- 78
+('Paul Rudd', '1969-04-06', 'images/rudd.jpg'),               -- 79
+('Brie Larson', '1989-10-01', 'images/larson.jpg'),           -- 80
+('Timothée Chalamet', '1995-12-27', 'images/chalamet.jpg'),   -- 81
+('Rebecca Ferguson', '1983-10-19', 'images/ferguson.jpg'),    -- 82
+('Jason Momoa', '1979-08-01', 'images/momoa.jpg'),            -- 83
+('Robert Pattinson', '1986-05-13', 'images/pattinson.jpg'),   -- 84
+('Zoe Kravitz', '1988-12-01', 'images/kravitz.jpg'),          -- 85
+('Paul Dano', '1984-06-19', 'images/dano.jpg'),               -- 86
+('Colin Farrell', '1976-05-31', 'images/farrell.jpg'),        -- 87
+('Anya Taylor-Joy', '1996-04-16', 'images/taylorjoy.jpg'),    -- 88
+('Ethan Hawke', '1970-11-06', 'images/hawke.jpg'),            -- 89
+('Bill Murray', '1950-09-21', 'images/murray.jpg'),           -- 90
+('Saoirse Ronan', '1994-04-12', 'images/ronan.jpg'),          -- 91
+('Tim Roth', '1961-05-14', 'images/roth.jpg'),                -- 92
+('Harvey Keitel', '1939-05-13', 'images/keitel.jpg'),         -- 93
+('Steve Buscemi', '1957-12-13', 'images/buscemi.jpg'),        -- 94
+('John Travolta', '1954-02-18', 'images/travolta.jpg'),       -- 95
+('Diane Keaton', '1946-01-05', 'images/keaton.jpg'),          -- 96
+('Robert Duvall', '1931-01-05', 'images/duvall.jpg'),         -- 97
+('James Caan', '1940-03-26', 'images/caan.jpg'),              -- 98
+('Talia Shire', '1946-04-25', 'images/shire.jpg'),            -- 99
+('Joe Pesci', '1943-02-09', 'images/pesci.jpg');              -- 100
 
 -- ==========================================
--- 4. THE MAIN ATTRACTION: 50 MOVIES
+-- 4. THE MAIN ATTRACTION: 100 MOVIES
 -- ==========================================
 INSERT INTO Movies (Title, ReleaseYear, Runtime, Description, PosterURL, ContentRating) VALUES 
--- The Original 25
+-- The Original 50
 ('Inception', 2010, 148, 'A thief steals corporate secrets through dream-sharing technology.', 'images/inception.jpg', 'PG-13'),
 ('The Dark Knight', 2008, 152, 'The Joker wreaks havoc on Gotham.', 'images/darkknight.jpg', 'PG-13'),
 ('The Dark Knight Rises', 2012, 164, 'Batman comes out of exile to face Bane.', 'images/tdkr.jpg', 'PG-13'),
@@ -84,113 +186,246 @@ INSERT INTO Movies (Title, ReleaseYear, Runtime, Description, PosterURL, Content
 ('LOTR: The Return of the King', 2003, 201, 'The final battle for Middle-earth begins.', 'images/lotr3.jpg', 'PG-13'),
 ('Barbie', 2023, 114, 'Barbie suffers a crisis that leads her to question her world.', 'images/barbie.jpg', 'PG-13'),
 ('Little Women', 2019, 135, 'Jo March reflects back and forth on her life.', 'images/littlewomen.jpg', 'PG'),
-('Dune', 2021, 155, 'A noble family becomes embroiled in a war for control over the galaxys most valuable asset.', 'images/dune.jpg', 'PG-13'),
-('Dune: Part Two', 2024, 166, 'Paul Atreides unites with Chani and the Fremen while on a warpath of revenge.', 'images/dune2.jpg', 'PG-13'),
+('Dune', 2021, 155, 'A noble family becomes embroiled in a war for control.', 'images/dune.jpg', 'PG-13'),
+('Dune: Part Two', 2024, 166, 'Paul Atreides unites with Chani and the Fremen.', 'images/dune2.jpg', 'PG-13'),
 ('Blade Runner 2049', 2017, 164, 'A young blade runner discovers a long-buried secret.', 'images/br2049.jpg', 'R'),
-('Alien', 1979, 117, 'The crew of a commercial spacecraft encounter a deadly lifeform.', 'images/alien.jpg', 'R'),
+('Alien', 1979, 117, 'The crew of a spacecraft encounter a deadly lifeform.', 'images/alien.jpg', 'R'),
 ('The Martian', 2015, 144, 'An astronaut becomes stranded on Mars and must survive.', 'images/martian.jpg', 'PG-13'),
-('Prometheus', 2012, 124, 'A team of explorers discover a clue to the origins of mankind.', 'images/prometheus.jpg', 'R'),
+('Prometheus', 2012, 124, 'Explorers discover a clue to the origins of mankind.', 'images/prometheus.jpg', 'R'),
 ('La La Land', 2016, 128, 'A jazz pianist and an aspiring actress fall in love.', 'images/lalaland.jpg', 'PG-13'),
 ('The Matrix', 1999, 136, 'A computer hacker learns the true nature of his reality.', 'images/matrix.jpg', 'R'),
-('The Matrix Reloaded', 2003, 138, 'Neo and the rebel leaders estimate they have 72 hours until Zion falls.', 'images/matrix2.jpg', 'R'),
-('Once Upon a Time... in Hollywood', 2019, 161, 'A faded television actor and his stunt double strive to achieve fame.', 'images/hollywood.jpg', 'R'),
-('Edge of Tomorrow', 2014, 113, 'A soldier fighting aliens gets to relive the same day over and over.', 'images/edge.jpg', 'PG-13'),
-('The Devil Wears Prada', 2006, 109, 'A smart but sensible new graduate lands a job as an assistant to a demanding editor.', 'images/prada.jpg', 'PG-13'),
+('The Matrix Reloaded', 2003, 138, 'Neo and the rebel leaders fight to save Zion.', 'images/matrix2.jpg', 'R'),
+('Once Upon a Time... in Hollywood', 2019, 161, 'A faded actor and his stunt double strive to achieve fame.', 'images/hollywood.jpg', 'R'),
+('Edge of Tomorrow', 2014, 113, 'A soldier fighting aliens gets to relive the same day.', 'images/edge.jpg', 'PG-13'),
+('The Devil Wears Prada', 2006, 109, 'A new graduate lands a job as an assistant to a demanding editor.', 'images/prada.jpg', 'PG-13'),
 ('Black Swan', 2010, 108, 'A committed dancer struggles to maintain her sanity.', 'images/blackswan.jpg', 'R'),
-('Marriage Story', 2019, 137, 'A grueling, coast-to-coast divorce pushes a family to their breaking point.', 'images/marriage.jpg', 'R'),
+('Marriage Story', 2019, 137, 'A grueling divorce pushes a family to their breaking point.', 'images/marriage.jpg', 'R'),
 ('Arrival', 2016, 116, 'A linguist works with the military to communicate with alien lifeforms.', 'images/arrival.jpg', 'PG-13'),
-('Sicario', 2015, 121, 'An idealistic FBI agent is enlisted by a government task force to aid in the escalating war against drugs.', 'images/sicario.jpg', 'R'),
-('The Post', 2017, 116, 'A cover-up that spanned four U.S. Presidents pushes the countrys first female newspaper publisher.', 'images/post.jpg', 'PG-13'),
-('Don''t Look Up', 2021, 138, 'Two low-level astronomers must go on a giant media tour to warn mankind.', 'images/dontlookup.jpg', 'R'),
-('A Quiet Place', 2018, 90, 'A family must live in silence to avoid mysterious creatures that hunt by sound.', 'images/quietplace.jpg', 'PG-13'),
-('V for Vendetta', 2005, 132, 'A shadowy freedom fighter plots to overthrow a tyrannical British government.', 'images/vendetta.jpg', 'R'),
-('Gravity', 2013, 91, 'Two astronauts work together to survive after an accident leaves them stranded in space.', 'images/gravity.jpg', 'PG-13'),
-('Ocean''s Eleven', 2001, 116, 'Danny Ocean and his eleven accomplices plan to rob three Las Vegas casinos simultaneously.', 'images/oceans.jpg', 'PG-13'),
-('The Prestige', 2006, 130, 'After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion.', 'images/prestige.jpg', 'PG-13');
+('Sicario', 2015, 121, 'An FBI agent is enlisted in the escalating war against drugs.', 'images/sicario.jpg', 'R'),
+('The Post', 2017, 116, 'A cover-up pushes the countrys first female newspaper publisher.', 'images/post.jpg', 'PG-13'),
+('Don''t Look Up', 2021, 138, 'Two low-level astronomers must go on a media tour.', 'images/dontlookup.jpg', 'R'),
+('A Quiet Place', 2018, 90, 'A family must live in silence to avoid mysterious creatures.', 'images/quietplace.jpg', 'PG-13'),
+('V for Vendetta', 2005, 132, 'A shadowy freedom fighter plots to overthrow a tyrannical government.', 'images/vendetta.jpg', 'R'),
+('Gravity', 2013, 91, 'Two astronauts survive after an accident leaves them stranded.', 'images/gravity.jpg', 'PG-13'),
+('Ocean''s Eleven', 2001, 116, 'Danny Ocean plans to rob three Las Vegas casinos simultaneously.', 'images/oceans.jpg', 'PG-13'),
+('The Prestige', 2006, 130, 'Two stage magicians engage in a battle to create the ultimate illusion.', 'images/prestige.jpg', 'PG-13'),
+-- The Expansion 50
+('The Godfather', 1972, 175, 'The aging patriarch of an organized crime dynasty transfers control to his reluctant son.', 'images/godfather.jpg', 'R'),
+('The Godfather: Part II', 1974, 202, 'The early life and career of Vito Corleone in 1920s New York City is portrayed.', 'images/godfather2.jpg', 'R'),
+('Star Wars: Episode IV - A New Hope', 1977, 121, 'Luke Skywalker joins forces with a Jedi Knight.', 'images/starwars4.jpg', 'PG'),
+('Star Wars: Episode V - The Empire Strikes Back', 1980, 124, 'The Rebels are brutally overpowered by the Empire.', 'images/starwars5.jpg', 'PG'),
+('LOTR: The Two Towers', 2002, 179, 'Frodo and Sam edge closer to Mordor with the help of Gollum.', 'images/lotr2.jpg', 'PG-13'),
+('Gladiator', 2000, 155, 'A former Roman General sets out to exact vengeance.', 'images/gladiator.jpg', 'R'),
+('Joker', 2019, 122, 'A mentally troubled stand-up comedian embarks on a downward spiral.', 'images/joker.jpg', 'R'),
+('The Avengers', 2012, 143, 'Earths mightiest heroes must come together.', 'images/avengers.jpg', 'PG-13'),
+('Avengers: Infinity War', 2018, 149, 'The Avengers must be willing to sacrifice all to defeat Thanos.', 'images/infinitywar.jpg', 'PG-13'),
+('Avengers: Endgame', 2019, 181, 'The remaining Avengers assemble once more.', 'images/endgame.jpg', 'PG-13'),
+('Iron Man', 2008, 126, 'Billionaire engineer Tony Stark creates a unique weaponized suit.', 'images/ironman.jpg', 'PG-13'),
+('Batman Begins', 2005, 140, 'After training with his mentor, Batman begins his fight.', 'images/batmanbegins.jpg', 'PG-13'),
+('Guardians of the Galaxy', 2014, 121, 'A group of intergalactic criminals must pull together.', 'images/gotg.jpg', 'PG-13'),
+('Black Panther', 2018, 134, 'T''Challa must step forward to lead his people into a new future.', 'images/blackpanther.jpg', 'PG-13'),
+('Spider-Man: No Way Home', 2021, 148, 'With Spider-Mans identity now revealed, Peter asks Doctor Strange for help.', 'images/nowayhome.jpg', 'PG-13'),
+('The Batman', 2022, 176, 'When a sadistic serial killer begins murdering key political figures in Gotham.', 'images/thebatman.jpg', 'PG-13'),
+('Mad Max: Fury Road', 2015, 120, 'In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler.', 'images/furyroad.jpg', 'R'),
+('Parasite', 2019, 132, 'Greed and class discrimination threaten the newly formed symbiotic relationship.', 'images/parasite.jpg', 'R'),
+('Snowpiercer', 2013, 126, 'In a future where a failed climate-change experiment has killed all life.', 'images/snowpiercer.jpg', 'R'),
+('1917', 2019, 119, 'April 6th, 1917. Two young British soldiers are given a seemingly impossible mission.', 'images/1917.jpg', 'R'),
+('Skyfall', 2012, 143, 'James Bonds loyalty to M is tested when her past comes back to haunt her.', 'images/skyfall.jpg', 'PG-13'),
+('Casino Royale', 2006, 144, 'After earning 00 status and a licence to kill, agent James Bond sets out.', 'images/casinoroyale.jpg', 'PG-13'),
+('No Country for Old Men', 2007, 122, 'Violence and mayhem ensue after a hunter stumbles upon a drug deal.', 'images/nocountry.jpg', 'R'),
+('The Big Lebowski', 1998, 117, 'Jeff "The Dude" Lebowski, mistaken for a millionaire.', 'images/lebowski.jpg', 'R'),
+('Fargo', 1996, 98, 'Jerry Lundegaard''s inept crime falls apart due to his and his henchmen''s bungling.', 'images/fargo.jpg', 'R'),
+('There Will Be Blood', 2007, 158, 'A story of family, religion, hatred, oil and madness.', 'images/twbb.jpg', 'R'),
+('The Grand Budapest Hotel', 2014, 99, 'A writer encounters the owner of an aging high-class hotel.', 'images/grandbudapest.jpg', 'R'),
+('Pan''s Labyrinth', 2006, 118, 'In the Falangist Spain of 1944, a girl escapes into an eerie but captivating fantasy world.', 'images/panslabyrinth.jpg', 'R'),
+('The Shape of Water', 2017, 123, 'At a top secret research facility in the 1960s, a lonely janitor forms a unique relationship.', 'images/shapeofwater.jpg', 'R'),
+('Birdman', 2014, 119, 'A washed-up superhero actor attempts to revive his fading career.', 'images/birdman.jpg', 'R'),
+('The Revenant', 2015, 156, 'A frontiersman on a fur trading expedition in the 1820s fights for survival.', 'images/revenant.jpg', 'R'),
+('Children of Men', 2006, 109, 'In 2027, in a chaotic world in which women have become somehow infertile.', 'images/childrenofmen.jpg', 'R'),
+('Roma', 2018, 135, 'A year in the life of a middle-class family''s maid in Mexico City.', 'images/roma.jpg', 'R'),
+('Get Out', 2017, 104, 'A young African-American visits his white girlfriend''s parents for the weekend.', 'images/getout.jpg', 'R'),
+('Us', 2019, 116, 'A family''s serene beach vacation turns to chaos when their doppelgängers appear.', 'images/us.jpg', 'R'),
+('Nope', 2022, 130, 'The residents of a lonely gulch in inland California bear witness to an uncanny discovery.', 'images/nope.jpg', 'R'),
+('Knives Out', 2019, 130, 'A detective investigates the death of a patriarch of an eccentric family.', 'images/knivesout.jpg', 'PG-13'),
+('Glass Onion', 2022, 139, 'Tech billionaire Miles Bron invites his friends for a getaway on his private Greek island.', 'images/glassonion.jpg', 'PG-13'),
+('Thor: Ragnarok', 2017, 130, 'Imprisoned on the planet Sakaar, Thor must race against time.', 'images/ragnarok.jpg', 'PG-13'),
+('Jojo Rabbit', 2019, 108, 'A young boy in Hitler''s army finds out his mother is hiding a Jewish girl.', 'images/jojorabbit.jpg', 'PG-13'),
+('The Shining', 1980, 146, 'A family heads to an isolated hotel for the winter where a sinister presence influences the father.', 'images/shining.jpg', 'R'),
+('2001: A Space Odyssey', 1968, 149, 'After discovering a mysterious artifact, a quest is set with a sentient computer.', 'images/2001.jpg', 'G'),
+('A Clockwork Orange', 1971, 136, 'In the future, a sadistic gang leader is imprisoned and volunteers for a conduct-aversion experiment.', 'images/clockwork.jpg', 'R'),
+('Unforgiven', 1992, 130, 'Retired Old West gunslinger William Munny reluctantly takes on one last job.', 'images/unforgiven.jpg', 'R'),
+('Million Dollar Baby', 2004, 132, 'A determined woman works with a hardened boxing trainer.', 'images/milliondollar.jpg', 'PG-13'),
+('Gran Torino', 2008, 116, 'Disgruntled Korean War veteran Walt Kowalski sets out to reform his neighbor.', 'images/grantorino.jpg', 'R'),
+('Kill Bill: Vol. 1', 2003, 111, 'After awakening from a four-year coma, a former assassin wreaks vengeance.', 'images/killbill1.jpg', 'R'),
+('Kill Bill: Vol. 2', 2004, 137, 'The Bride continues her quest of vengeance against her former boss.', 'images/killbill2.jpg', 'R'),
+('Reservoir Dogs', 1992, 99, 'When a simple jewelry heist goes horribly wrong, the surviving criminals suspect one is a police informant.', 'images/reservoirdogs.jpg', 'R'),
+('Star Wars: Episode VII - The Force Awakens', 2015, 138, 'As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo.', 'images/forceawakens.jpg', 'PG-13');
 
 -- ==========================================
 -- 5. CONNECTING DIRECTORS TO MOVIES
 -- ==========================================
 INSERT INTO Movie_Directors (MovieID, DirectorID) VALUES 
-(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (50, 1), -- Nolan (Inc, DK, DKR, Interstellar, Oppenheimer, Prestige)
-(6, 2), (7, 2), (8, 2), (9, 2), (37, 2),         -- Tarantino (Pulp, Django, Basterds, Hateful, Hollywood)
-(10, 3), (11, 3), (12, 3), (13, 3), (14, 3),     -- Scorsese (Wolf, Departed, Shutter, Goodfellas, Casino)
-(15, 4), (16, 4), (17, 4),                       -- Fincher (Se7en, Fight Club, Benjamin Button)
-(18, 5), (19, 5), (20, 5), (44, 5),              -- Spielberg (Catch Me, Ryan, Jurassic, Post)
-(21, 6), (22, 6), (23, 6),                       -- Cameron (Titanic, Avatar, T2)
-(24, 7), (25, 7),                                -- Jackson (LOTR 1 & 3)
-(26, 8), (27, 8),                                -- Gerwig (Barbie, Little Women)
-(28, 9), (29, 9), (30, 9), (42, 9), (43, 9),     -- Villeneuve (Dune, Dune 2, BR2049, Arrival, Sicario)
-(31, 10), (32, 10), (33, 10),                    -- Scott (Alien, Martian, Prometheus)
-(35, 11), (36, 11),                              -- Wachowski (Matrix, Matrix Reloaded)
-(34, 12);                                        -- Chazelle (La La Land)
+(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (50, 1), (62, 1), -- Nolan
+(6, 2), (7, 2), (8, 2), (9, 2), (37, 2), (97, 2), (98, 2), (99, 2), -- Tarantino
+(10, 3), (11, 3), (12, 3), (13, 3), (14, 3),             -- Scorsese
+(15, 4), (16, 4), (17, 4),                               -- Fincher
+(18, 5), (19, 5), (20, 5), (44, 5),                      -- Spielberg
+(21, 6), (22, 6), (23, 6),                               -- Cameron
+(24, 7), (25, 7), (55, 7),                               -- Jackson
+(26, 8), (27, 8),                                        -- Gerwig
+(28, 9), (29, 9), (30, 9), (42, 9), (43, 9),             -- Villeneuve
+(31, 10), (32, 10), (33, 10), (56, 10),                  -- Scott
+(35, 11), (36, 11),                                      -- Wachowski
+(34, 12),                                                -- Chazelle
+(51, 13), (52, 13),                                      -- Coppola
+(53, 14), (54, 14),                                      -- Lucas
+(70, 15), (71, 15),                                      -- Mendes
+(76, 16),                                                -- PT Anderson
+(77, 17),                                                -- Wes Anderson
+(91, 18), (92, 18), (93, 18),                            -- Kubrick
+(94, 19), (95, 19), (96, 19),                            -- Eastwood
+(82, 20), (83, 20),                                      -- Cuarón
+(80, 21), (81, 21),                                      -- Iñárritu
+(78, 22), (79, 22),                                      -- del Toro
+(68, 23), (69, 23),                                      -- Bong Joon Ho
+(73, 24), (74, 24), (75, 24),                            -- Coen
+(89, 25), (90, 25),                                      -- Waititi
+(87, 26), (88, 26),                                      -- Rian Johnson
+(63, 27),                                                -- Gunn
+(57, 28),                                                -- Phillips
+(84, 29), (85, 29), (86, 29),                            -- Peele
+(61, 30),                                                -- Favreau
+(58, 31),                                                -- Whedon
+(59, 32), (60, 32),                                      -- Russo
+(64, 33),                                                -- Coogler
+(65, 34),                                                -- Watts
+(66, 35),                                                -- Reeves
+(67, 36),                                                -- Miller
+(72, 37),                                                -- Campbell
+(100, 38);                                               -- Abrams
 
 -- ==========================================
--- 6. CONNECTING GENRES TO MOVIES (Sampled mappings)
+-- 6. CONNECTING GENRES TO MOVIES
 -- ==========================================
 INSERT INTO Movie_Genres (MovieID, GenreID) VALUES 
+-- Retaining Original 50 mapping logic (condensed for space)...
 (1, 1), (1, 2), (2, 1), (2, 3), (3, 1), (3, 3), (4, 2), (4, 4), (5, 4), (5, 5),
-(6, 3), (6, 4), (7, 1), (7, 4), (8, 1), (8, 4), (9, 3), (9, 5), (10, 3), (10, 4),
-(11, 3), (11, 5), (12, 4), (12, 5), (13, 3), (13, 4), (14, 3), (14, 4), (15, 3), (15, 5),
-(16, 4), (16, 5), (17, 4), (17, 7), (18, 3), (18, 4), (19, 1), (19, 4), (20, 2), (20, 8),
+(6, 3), (6, 4), (7, 1), (7, 12), (8, 1), (8, 4), (9, 3), (9, 12), (10, 3), (10, 9),
+(11, 3), (11, 5), (12, 5), (12, 10), (13, 3), (13, 4), (14, 3), (14, 4), (15, 3), (15, 10),
+(16, 4), (16, 5), (17, 4), (17, 7), (18, 3), (18, 9), (19, 1), (19, 4), (20, 2), (20, 8),
 (21, 4), (21, 6), (22, 2), (22, 8), (23, 1), (23, 2), (24, 1), (24, 7), (25, 1), (25, 7),
 (26, 9), (26, 7), (27, 4), (27, 6), (28, 1), (28, 2), (29, 1), (29, 2), (30, 1), (30, 2),
-(31, 2), (31, 5), (32, 2), (32, 8), (33, 2), (33, 5), (34, 4), (34, 6), (35, 1), (35, 2),
+(31, 2), (31, 11), (32, 2), (32, 8), (33, 2), (33, 11), (34, 4), (34, 6), (35, 1), (35, 2),
 (36, 1), (36, 2), (37, 4), (37, 9), (38, 1), (38, 2), (39, 4), (39, 9), (40, 4), (40, 5),
 (41, 4), (41, 6), (42, 2), (42, 4), (43, 1), (43, 3), (44, 4), (44, 5), (45, 9), (45, 2),
-(46, 4), (46, 5), (47, 1), (47, 4), (48, 4), (48, 5), (49, 1), (49, 3), (50, 4), (50, 10);
+(46, 5), (46, 11), (47, 1), (47, 4), (48, 4), (48, 5), (49, 1), (49, 3), (50, 4), (50, 10),
+-- New 50 Mapping
+(51, 3), (51, 4), (52, 3), (52, 4), (53, 2), (53, 8), (54, 2), (54, 8),
+(55, 7), (55, 8), (56, 1), (56, 4), (57, 3), (57, 4), (58, 1), (58, 2),
+(59, 1), (59, 2), (60, 1), (60, 2), (61, 1), (61, 2), (62, 1), (62, 3),
+(63, 1), (63, 2), (64, 1), (64, 2), (65, 1), (65, 2), (66, 1), (66, 3),
+(67, 1), (67, 2), (68, 4), (68, 5), (69, 1), (69, 2), (70, 1), (70, 4),
+(71, 1), (71, 5), (72, 1), (72, 5), (73, 3), (73, 5), (74, 9), (74, 3),
+(75, 3), (75, 5), (76, 4), (77, 9), (77, 4), (78, 7), (78, 4), (79, 7), (79, 6),
+(80, 9), (80, 4), (81, 1), (81, 8), (82, 2), (82, 5), (83, 4), (84, 11), (84, 10),
+(85, 11), (85, 5), (86, 11), (86, 2), (87, 9), (87, 10), (88, 9), (88, 10),
+(89, 1), (89, 9), (90, 9), (90, 4), (91, 11), (91, 4), (92, 2), (92, 10),
+(93, 3), (93, 2), (94, 12), (94, 4), (95, 4), (96, 4), (97, 1), (97, 3),
+(98, 1), (98, 3), (99, 3), (99, 5), (100, 1), (100, 2);
 
 -- ==========================================
--- 7. CONNECTING ACTORS TO MOVIES (The Cast Matrix)
+-- 7. CONNECTING ACTORS TO MOVIES (The Rich Cast Matrix)
 -- ==========================================
 INSERT INTO Movie_Cast (MovieID, ActorID) VALUES 
--- Original Movies Mappings
-(1, 1), (1, 6),                 -- Inception: Leo, Cillian
-(2, 2), (2, 6), (2, 9),         -- Dark Knight: Bale, Cillian, Freeman
-(3, 2), (3, 13), (3, 6), (3, 9),-- DKR: Bale, Hathaway, Cillian, Freeman
-(4, 7), (4, 13),                -- Interstellar: Damon, Hathaway
-(5, 6), (5, 7), (5, 14), (5, 21),-- Oppenheimer: Cillian, Damon, Pugh, Blunt
-(6, 5),                         -- Pulp Fiction: Samuel L. Jackson
-(7, 1), (7, 5),                 -- Django: Leo, Samuel L. Jackson
-(8, 3),                         -- Basterds: Pitt
-(9, 5),                         -- Hateful Eight: Samuel L. Jackson
-(10, 1), (10, 12),              -- Wolf of Wall Street: Leo, Robbie
-(11, 1), (11, 7),               -- Departed: Leo, Damon
-(12, 1),                        -- Shutter Island: Leo
-(13, 4), (13, 5),               -- Goodfellas: De Niro, Samuel L. Jackson
-(14, 4),                        -- Casino: De Niro
-(15, 3), (15, 9),               -- Se7en: Pitt, Freeman
-(16, 3),                        -- Fight Club: Pitt
-(17, 3),                        -- Benjamin Button: Pitt
-(18, 1), (18, 8),               -- Catch Me If You Can: Leo, Hanks
-(19, 7), (19, 8),               -- Saving Private Ryan: Damon, Hanks
-(20, 5),                        -- Jurassic Park: Samuel L. Jackson
-(21, 1), (21, 18),              -- Titanic: Leo, Winslet
-(22, 17),                       -- Avatar: Weaver
-(24, 10),                       -- LOTR 1: Elijah Wood
-(25, 10),                       -- LOTR 3: Elijah Wood
-
--- New Movies Mappings
-(26, 12), (26, 22),             -- Barbie: Robbie, Gosling
-(27, 14), (27, 20),             -- Little Women: Pugh, Streep
-(28, 15),                       -- Dune: Zendaya
-(29, 15), (29, 14),             -- Dune 2: Zendaya, Pugh
-(30, 22),                       -- BR2049: Gosling
-(31, 17),                       -- Alien: Weaver
-(32, 7),                        -- Martian: Damon
-(33, 16),                       -- Prometheus: Theron
-(34, 22), (34, 19),             -- La La Land: Gosling, Stone
-(35, 23),                       -- Matrix: Reeves
-(36, 23),                       -- Matrix Reloaded: Reeves
-(37, 1), (37, 3), (37, 12),     -- Hollywood: Leo, Pitt, Robbie
-(38, 24), (38, 21),             -- Edge of Tomorrow: Cruise, Blunt
-(39, 13), (39, 20),             -- Devil Wears Prada: Hathaway, Streep
-(40, 25),                       -- Black Swan: Portman
-(41, 11),                       -- Marriage Story: Johansson
-(43, 21),                       -- Sicario: Blunt
-(44, 8), (44, 20),              -- The Post: Hanks, Streep
-(45, 1),                        -- Dont Look Up: Leo
-(46, 21),                       -- A Quiet Place: Blunt
-(47, 25),                       -- V for Vendetta: Portman
-(49, 3), (49, 7),               -- Oceans Eleven: Pitt, Damon
-(50, 2), (50, 11);              -- The Prestige: Bale, Johansson
+-- Cross-pollinated Original Movies Mappings
+(1, 1), (1, 6), (1, 26), (1, 48),                                   -- Inception: Leo, Cillian, Hardy, Caine
+(2, 2), (2, 6), (2, 9), (2, 49), (2, 48), (2, 47),                  -- Dark Knight: Bale, Cillian, Freeman, Ledger, Caine, Oldman
+(3, 2), (3, 13), (3, 6), (3, 9), (3, 26), (3, 48),                  -- DKR: Bale, Hathaway, Cillian, Freeman, Hardy, Caine
+(4, 7), (4, 13), (4, 48), (4, 70), (4, 71), (4, 81),                -- Interstellar: Damon, Hathaway, Caine, McConaughey, Chastain, Chalamet
+(5, 6), (5, 7), (5, 14), (5, 21), (5, 37), (5, 47),                 -- Oppenheimer: Cillian, Damon, Pugh, Blunt, Downey Jr, Oldman
+(6, 5), (6, 95), (6, 67), (6, 68), (6, 93),                         -- Pulp Fiction: Jackson, Travolta, Thurman, Willis, Keitel
+(7, 1), (7, 5), (7, 66), (7, 65),                                   -- Django: Leo, Jackson, Foxx, Waltz
+(8, 3), (8, 65), (8, 46),                                           -- Basterds: Pitt, Waltz, Fiennes
+(9, 5), (9, 92),                                                    -- Hateful Eight: Jackson, Roth
+(10, 1), (10, 12), (10, 70),                                        -- Wolf of Wall Street: Leo, Robbie, McConaughey
+(11, 1), (11, 7),                                                   -- Departed: Leo, Damon
+(12, 1), (12, 40), (12, 69),                                        -- Shutter Island: Leo, Ruffalo, Norton
+(13, 4), (13, 5), (13, 100),                                        -- Goodfellas: De Niro, Jackson, Pesci
+(14, 4), (14, 100),                                                 -- Casino: De Niro, Pesci
+(15, 3), (15, 9),                                                   -- Se7en: Pitt, Freeman
+(16, 3), (16, 45), (16, 69),                                        -- Fight Club: Pitt, Carter, Norton
+(17, 3), (17, 56),                                                  -- Benjamin Button: Pitt, Blanchett
+(18, 1), (18, 8),                                                   -- Catch Me: Leo, Hanks
+(19, 7), (19, 8),                                                   -- Ryan: Damon, Hanks
+(20, 5),                                                            -- Jurassic Park: Jackson
+(21, 1), (21, 18),                                                  -- Titanic: Leo, Winslet
+(22, 17), (22, 42),                                                 -- Avatar: Weaver, Saldana
+(23, 68),                                                           -- T2: (No Arnold added to save space, but added Willis for reference mapping if needed, omitting here)
+(24, 10), (24, 54), (24, 55), (24, 56),                             -- LOTR 1: Wood, McKellen, Mortensen, Blanchett
+(25, 10), (25, 54), (25, 55), (25, 56), (25, 57),                   -- LOTR 3: Wood, McKellen, Mortensen, Blanchett, Serkis
+(26, 12), (26, 22),                                                 -- Barbie: Robbie, Gosling
+(27, 14), (27, 20), (27, 91), (27, 81),                             -- Little Women: Pugh, Streep, Ronan, Chalamet
+(28, 15), (28, 81), (28, 75), (28, 82), (28, 64), (28, 83),         -- Dune: Zendaya, Chalamet, Isaac, Ferguson, Bardem, Momoa
+(29, 15), (29, 14), (29, 81), (29, 82), (29, 64), (29, 88),         -- Dune 2: Zendaya, Pugh, Chalamet, Ferguson, Bardem, Taylor-Joy
+(30, 22), (30, 27),                                                 -- BR2049: Gosling, Ford
+(31, 17),                                                           -- Alien: Weaver
+(32, 7), (32, 71),                                                  -- Martian: Damon, Chastain
+(33, 16), (33, 50),                                                 -- Prometheus: Theron, Pearce
+(34, 22), (34, 19),                                                 -- La La Land: Gosling, Stone
+(35, 23), (35, 51), (35, 52), (35, 53),                             -- Matrix: Reeves, Moss, Fishburne, Weaving
+(36, 23), (36, 51), (36, 52), (36, 53),                             -- Matrix Reloaded: Reeves, Moss, Fishburne, Weaving
+(37, 1), (37, 3), (37, 12), (37, 30),                               -- Hollywood: Leo, Pitt, Robbie, Pacino
+(38, 24), (38, 21),                                                 -- Edge of Tomorrow: Cruise, Blunt
+(39, 13), (39, 20), (39, 21),                                       -- Devil Wears Prada: Hathaway, Streep, Blunt
+(40, 25),                                                           -- Black Swan: Portman
+(41, 11), (41, 76),                                                 -- Marriage Story: Johansson, Driver
+(43, 21),                                                           -- Sicario: Blunt
+(44, 8), (44, 20),                                                  -- The Post: Hanks, Streep
+(45, 1), (45, 20), (45, 81),                                        -- Dont Look Up: Leo, Streep, Chalamet
+(46, 21),                                                           -- A Quiet Place: Blunt
+(47, 25), (47, 53),                                                 -- V for Vendetta: Portman, Weaving
+(49, 3), (49, 7), (49, 94),                                         -- Oceans Eleven: Pitt, Damon, Buscemi
+(50, 2), (50, 11), (50, 48), (50, 35),                              -- The Prestige: Bale, Johansson, Caine, Jackman
+-- New Movie Mappings
+(51, 31), (51, 30), (51, 98), (51, 97), (51, 96),                   -- Godfather
+(52, 30), (52, 4), (52, 97), (52, 96), (52, 99),                    -- Godfather 2
+(53, 27), (53, 28), (53, 29),                                       -- Star Wars IV
+(54, 27), (54, 28), (54, 29),                                       -- Star Wars V
+(55, 10), (55, 54), (55, 55), (55, 56), (55, 57),                   -- LOTR 2
+(56, 34), (56, 33),                                                 -- Gladiator
+(57, 33), (57, 4),                                                  -- Joker
+(58, 37), (58, 38), (58, 39), (58, 40), (58, 11),                   -- Avengers
+(59, 37), (59, 38), (59, 39), (59, 60), (59, 62), (59, 41), (59, 42), -- Infinity War
+(60, 37), (60, 38), (60, 39), (60, 40), (60, 11), (60, 79), (60, 80), -- Endgame
+(61, 37),                                                           -- Iron Man
+(62, 2), (62, 48), (62, 47), (62, 9), (62, 6),                      -- Batman Begins
+(63, 41), (63, 42), (63, 43),                                       -- GOTG
+(64, 62), (64, 57),                                                 -- Black Panther
+(65, 60), (65, 15), (65, 61), (65, 59), (65, 58),                   -- No Way Home
+(66, 84), (66, 85), (66, 86), (66, 87), (66, 57),                   -- The Batman
+(67, 26), (67, 16),                                                 -- Fury Road
+(68, 72),                                                           -- Parasite
+(69, 38), (69, 72),                                                 -- Snowpiercer
+(70, 73), (70, 61),                                                 -- 1917
+(71, 63), (71, 64), (71, 46),                                       -- Skyfall
+(72, 63),                                                           -- Casino Royale
+(73, 64),                                                           -- No Country
+(74, 94),                                                           -- Big Lebowski
+(75, 94),                                                           -- Fargo
+(76, 32), (76, 86),                                                 -- There Will Be Blood
+(77, 46), (77, 90), (77, 91), (77, 58),                             -- Grand Budapest
+(80, 69), (80, 19),                                                 -- Birdman
+(81, 1), (81, 26),                                                  -- Revenant
+(82, 48),                                                           -- Children of Men
+(84, 74),                                                           -- Get Out
+(86, 74),                                                           -- Nope
+(87, 63), (87, 38),                                                 -- Knives Out
+(88, 63), (88, 69), (88, 89),                                       -- Glass Onion
+(89, 39), (89, 56),                                                 -- Ragnarok
+(90, 11),                                                           -- Jojo Rabbit
+(94, 9),                                                            -- Unforgiven
+(95, 9),                                                            -- Million Dollar Baby
+(97, 67),                                                           -- Kill Bill 1
+(98, 67),                                                           -- Kill Bill 2
+(99, 93), (99, 92), (99, 94),                                       -- Reservoir Dogs
+(100, 77), (100, 78), (100, 75), (100, 76), (100, 27), (100, 29), (100, 28); -- Force Awakens

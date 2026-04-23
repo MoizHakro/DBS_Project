@@ -53,213 +53,213 @@ INSERT INTO Directors (FullName, BirthDate) VALUES
 -- 3. THE FOUNDATION: ACTORS (100 Total)
 -- ==========================================
 INSERT INTO Actors (FullName, BirthDate, PhotoURL) VALUES 
-('Leonardo DiCaprio', '1974-11-11', 'leo.png'),        -- 1
-('Christian Bale', '1974-01-30', 'bale.png'),          -- 2
-('Brad Pitt', '1963-12-18', 'pitt.png'),               -- 3
-('Robert De Niro', '1943-08-17', 'deniro.png'),        -- 4
-('Samuel L. Jackson', '1948-12-21', 'jackson.png'),    -- 5
-('Cillian Murphy', '1976-05-25', 'murphy.png'),        -- 6
-('Matt Damon', '1970-10-08', 'damon.png'),             -- 7
-('Tom Hanks', '1956-07-09', 'hanks.png'),              -- 8
-('Morgan Freeman', '1937-06-01', 'freeman.png'),       -- 9
-('Elijah Wood', '1981-01-28', 'wood.png'),             -- 10
-('Scarlett Johansson', '1984-11-22', 'johansson.png'), -- 11
-('Margot Robbie', '1990-07-02', 'robbie.png'),         -- 12
-('Anne Hathaway', '1982-11-12', 'hathaway.png'),       -- 13
-('Florence Pugh', '1996-01-03', 'pugh.png'),           -- 14
-('Zendaya', '1996-09-01', 'zendaya.png'),              -- 15
-('Charlize Theron', '1975-08-07', 'theron.png'),       -- 16
-('Sigourney Weaver', '1949-10-08', 'weaver.png'),      -- 17
-('Kate Winslet', '1975-10-05', 'winslet.png'),         -- 18
-('Emma Stone', '1988-11-06', 'stone.png'),             -- 19
-('Meryl Streep', '1949-06-22', 'streep.png'),          -- 20
-('Emily Blunt', '1983-02-23', 'blunt.png'),            -- 21
-('Ryan Gosling', '1980-11-12', 'gosling.png'),         -- 22
-('Keanu Reeves', '1964-09-02', 'reeves.png'),          -- 23
-('Tom Cruise', '1962-07-03', 'cruise.png'),            -- 24
-('Natalie Portman', '1981-06-09', 'portman.png'),      -- 25
-('Tom Hardy', '1977-09-15', 'hardy.png'),              -- 26
-('Harrison Ford', '1942-07-13', 'ford.png'),           -- 27
-('Mark Hamill', '1951-09-25', 'hamill.png'),           -- 28
-('Carrie Fisher', '1956-10-21', 'fisher.png'),         -- 29
-('Al Pacino', '1940-04-25', 'pacino.png'),             -- 30
-('Marlon Brando', '1924-04-03', 'brando.png'),         -- 31
-('Daniel Day-Lewis', '1957-04-29', 'daylewis.png'),    -- 32
-('Joaquin Phoenix', '1974-10-28', 'phoenix.png'),      -- 33
-('Russell Crowe', '1964-04-07', 'crowe.png'),          -- 34
-('Hugh Jackman', '1968-10-12', 'jackman.png'),         -- 35
-('Ryan Reynolds', '1976-10-23', 'reynolds.png'),       -- 36
-('Robert Downey Jr.', '1965-04-04', 'downeyjr.png'),   -- 37
-('Chris Evans', '1981-06-13', 'evans.png'),            -- 38
-('Chris Hemsworth', '1983-08-11', 'hemsworth.png'),    -- 39
-('Mark Ruffalo', '1967-11-22', 'ruffalo.png'),         -- 40
-('Chris Pratt', '1979-06-21', 'pratt.png'),            -- 41
-('Zoe Saldana', '1978-06-19', 'saldana.png'),          -- 42
-('Bradley Cooper', '1975-01-05', 'cooper.png'),        -- 43
-('Johnny Depp', '1963-06-09', 'depp.png'),             -- 44
-('Helena Bonham Carter', '1966-05-26', 'carter.png'),  -- 45
-('Ralph Fiennes', '1962-12-22', 'fiennes.png'),        -- 46
-('Gary Oldman', '1958-03-21', 'oldman.png'),           -- 47
-('Michael Caine', '1933-03-14', 'caine.png'),          -- 48
-('Heath Ledger', '1979-04-04', 'ledger.png'),          -- 49
-('Guy Pearce', '1967-10-05', 'pearce.png'),            -- 50
-('Carrie-Anne Moss', '1967-08-21', 'moss.png'),        -- 51
-('Laurence Fishburne', '1961-07-30', 'fishburne.png'), -- 52
-('Hugo Weaving', '1960-04-04', 'weaving.png'),         -- 53
-('Ian McKellen', '1939-05-25', 'mckellen.png'),        -- 54
-('Viggo Mortensen', '1958-10-20', 'mortensen.png'),    -- 55
-('Cate Blanchett', '1969-05-14', 'blanchett.png'),     -- 56
-('Andy Serkis', '1964-04-20', 'serkis.png'),           -- 57
-('Willem Dafoe', '1955-07-22', 'dafoe.png'),           -- 58
-('Tobey Maguire', '1975-06-27', 'maguire.png'),        -- 59
-('Tom Holland', '1996-06-01', 'holland.png'),          -- 60
-('Benedict Cumberbatch', '1976-07-19', 'cumberbatch.png'), -- 61
-('Chadwick Boseman', '1976-11-29', 'boseman.png'),     -- 62
-('Daniel Craig', '1968-03-02', 'craig.png'),           -- 63
-('Javier Bardem', '1969-03-01', 'bardem.png'),         -- 64
-('Christoph Waltz', '1956-10-04', 'waltz.png'),        -- 65
-('Jamie Foxx', '1967-12-13', 'foxx.png'),              -- 66
-('Uma Thurman', '1970-04-29', 'thurman.png'),          -- 67
-('Bruce Willis', '1955-03-19', 'willis.png'),          -- 68
-('Edward Norton', '1969-08-18', 'norton.png'),         -- 69
-('Matthew McConaughey', '1969-11-04', 'mcconaughey.png'), -- 70
-('Jessica Chastain', '1977-03-24', 'chastain.png'),    -- 71
-('Song Kang-ho', '1967-01-17', 'song.png'),            -- 72
-('Colin Firth', '1960-09-10', 'firth.png'),            -- 73
-('Daniel Kaluuya', '1989-02-24', 'kaluuya.png'),       -- 74
-('Oscar Isaac', '1979-03-09', 'isaac.png'),            -- 75
-('Adam Driver', '1983-11-19', 'driver.png'),           -- 76
-('Daisy Ridley', '1992-04-10', 'ridley.png'),          -- 77
+('Leonardo DiCaprio', '1974-11-11', 'leo.jpg'),        -- 1
+('Christian Bale', '1974-01-30', 'bale.jpg'),          -- 2
+('Brad Pitt', '1963-12-18', 'pitt.jpg'),               -- 3
+('Robert De Niro', '1943-08-17', 'deniro.jpg'),        -- 4
+('Samuel L. Jackson', '1948-12-21', 'jackson.jpg'),    -- 5
+('Cillian Murphy', '1976-05-25', 'murphy.jpg'),        -- 6
+('Matt Damon', '1970-10-08', 'damon.jpg'),             -- 7
+('Tom Hanks', '1956-07-09', 'hanks.jpg'),              -- 8
+('Morgan Freeman', '1937-06-01', 'freeman.jpg'),       -- 9
+('Elijah Wood', '1981-01-28', 'wood.jpg'),             -- 10
+('Scarlett Johansson', '1984-11-22', 'johansson.jpg'), -- 11
+('Margot Robbie', '1990-07-02', 'robbie.jpg'),         -- 12
+('Anne Hathaway', '1982-11-12', 'hathaway.jpg'),       -- 13
+('Florence Pugh', '1996-01-03', 'pugh.jpg'),           -- 14
+('Zendaya', '1996-09-01', 'zendaya.jpg'),              -- 15
+('Charlize Theron', '1975-08-07', 'theron.jpg'),       -- 16
+('Sigourney Weaver', '1949-10-08', 'weaver.jpg'),      -- 17
+('Kate Winslet', '1975-10-05', 'winslet.jpg'),         -- 18
+('Emma Stone', '1988-11-06', 'stone.jpg'),             -- 19
+('Meryl Streep', '1949-06-22', 'streep.jpg'),          -- 20
+('Emily Blunt', '1983-02-23', 'blunt.jpg'),            -- 21
+('Ryan Gosling', '1980-11-12', 'gosling.jpg'),         -- 22
+('Keanu Reeves', '1964-09-02', 'reeves.jpg'),          -- 23
+('Tom Cruise', '1962-07-03', 'cruise.jpg'),            -- 24
+('Natalie Portman', '1981-06-09', 'portman.jpg'),      -- 25
+('Tom Hardy', '1977-09-15', 'hardy.jpg'),              -- 26
+('Harrison Ford', '1942-07-13', 'ford.jpg'),           -- 27
+('Mark Hamill', '1951-09-25', 'hamill.jpg'),           -- 28
+('Carrie Fisher', '1956-10-21', 'fisher.jpg'),         -- 29
+('Al Pacino', '1940-04-25', 'pacino.jpg'),             -- 30
+('Marlon Brando', '1924-04-03', 'brando.jpg'),         -- 31
+('Daniel Day-Lewis', '1957-04-29', 'daylewis.jpg'),    -- 32
+('Joaquin Phoenix', '1974-10-28', 'phoenix.jpg'),      -- 33
+('Russell Crowe', '1964-04-07', 'crowe.jpg'),          -- 34
+('Hugh Jackman', '1968-10-12', 'jackman.jpg'),         -- 35
+('Ryan Reynolds', '1976-10-23', 'reynolds.jpg'),       -- 36
+('Robert Downey Jr.', '1965-04-04', 'downeyjr.jpg'),   -- 37
+('Chris Evans', '1981-06-13', 'evans.jpg'),            -- 38
+('Chris Hemsworth', '1983-08-11', 'hemsworth.jpg'),    -- 39
+('Mark Ruffalo', '1967-11-22', 'ruffalo.jpg'),         -- 40
+('Chris Pratt', '1979-06-21', 'pratt.jpg'),            -- 41
+('Zoe Saldana', '1978-06-19', 'saldana.jpg'),          -- 42
+('Bradley Cooper', '1975-01-05', 'cooper.jpg'),        -- 43
+('Johnny Depp', '1963-06-09', 'depp.jpg'),             -- 44
+('Helena Bonham Carter', '1966-05-26', 'carter.jpg'),  -- 45
+('Ralph Fiennes', '1962-12-22', 'fiennes.jpg'),        -- 46
+('Gary Oldman', '1958-03-21', 'oldman.jpg'),           -- 47
+('Michael Caine', '1933-03-14', 'caine.jpg'),          -- 48
+('Heath Ledger', '1979-04-04', 'ledger.jpg'),          -- 49
+('Guy Pearce', '1967-10-05', 'pearce.jpg'),            -- 50
+('Carrie-Anne Moss', '1967-08-21', 'moss.jpg'),        -- 51
+('Laurence Fishburne', '1961-07-30', 'fishburne.jpg'), -- 52
+('Hugo Weaving', '1960-04-04', 'weaving.jpg'),         -- 53
+('Ian McKellen', '1939-05-25', 'mckellen.jpg'),        -- 54
+('Viggo Mortensen', '1958-10-20', 'mortensen.jpg'),    -- 55
+('Cate Blanchett', '1969-05-14', 'blanchett.jpg'),     -- 56
+('Andy Serkis', '1964-04-20', 'serkis.jpg'),           -- 57
+('Willem Dafoe', '1955-07-22', 'dafoe.jpg'),           -- 58
+('Tobey Maguire', '1975-06-27', 'maguire.jpg'),        -- 59
+('Tom Holland', '1996-06-01', 'holland.jpg'),          -- 60
+('Benedict Cumberbatch', '1976-07-19', 'cumberbatch.jpg'), -- 61
+('Chadwick Boseman', '1976-11-29', 'boseman.jpg'),     -- 62
+('Daniel Craig', '1968-03-02', 'craig.jpg'),           -- 63
+('Javier Bardem', '1969-03-01', 'bardem.jpg'),         -- 64
+('Christoph Waltz', '1956-10-04', 'waltz.jpg'),        -- 65
+('Jamie Foxx', '1967-12-13', 'foxx.jpg'),              -- 66
+('Uma Thurman', '1970-04-29', 'thurman.jpg'),          -- 67
+('Bruce Willis', '1955-03-19', 'willis.jpg'),          -- 68
+('Edward Norton', '1969-08-18', 'norton.jpg'),         -- 69
+('Matthew McConaughey', '1969-11-04', 'mcconaughey.jpg'), -- 70
+('Jessica Chastain', '1977-03-24', 'chastain.jpg'),    -- 71
+('Song Kang-ho', '1967-01-17', 'song.jpg'),            -- 72
+('Colin Firth', '1960-09-10', 'firth.jpg'),            -- 73
+('Daniel Kaluuya', '1989-02-24', 'kaluuya.jpg'),       -- 74
+('Oscar Isaac', '1979-03-09', 'isaac.jpg'),            -- 75
+('Adam Driver', '1983-11-19', 'driver.jpg'),           -- 76
+('Daisy Ridley', '1992-04-10', 'ridley.jpg'),          -- 77
 ('John Boyega', '1992-03-17', 'boyega.png'),           -- 78
-('Paul Rudd', '1969-04-06', 'rudd.png'),               -- 79
-('Brie Larson', '1989-10-01', 'larson.png'),           -- 80
-('Timothée Chalamet', '1995-12-27', 'chalamet.png'),   -- 81
-('Rebecca Ferguson', '1983-10-19', 'ferguson.png'),    -- 82
-('Jason Momoa', '1979-08-01', 'momoa.png'),            -- 83
-('Robert Pattinson', '1986-05-13', 'pattinson.png'),   -- 84
-('Zoe Kravitz', '1988-12-01', 'kravitz.png'),          -- 85
-('Paul Dano', '1984-06-19', 'dano.png'),               -- 86
-('Colin Farrell', '1976-05-31', 'farrell.png'),        -- 87
-('Anya Taylor-Joy', '1996-04-16', 'taylorjoy.png'),    -- 88
-('Ethan Hawke', '1970-11-06', 'hawke.png'),            -- 89
-('Bill Murray', '1950-09-21', 'murray.png'),           -- 90
-('Saoirse Ronan', '1994-04-12', 'ronan.png'),          -- 91
-('Tim Roth', '1961-05-14', 'roth.png'),                -- 92
-('Harvey Keitel', '1939-05-13', 'keitel.png'),         -- 93
-('Steve Buscemi', '1957-12-13', 'buscemi.png'),        -- 94
-('John Travolta', '1954-02-18', 'travolta.png'),       -- 95
-('Diane Keaton', '1946-01-05', 'keaton.png'),          -- 96
-('Robert Duvall', '1931-01-05', 'duvall.png'),         -- 97
-('James Caan', '1940-03-26', 'caan.png'),              -- 98
-('Talia Shire', '1946-04-25', 'shire.png'),            -- 99
-('Joe Pesci', '1943-02-09', 'pesci.png');              -- 100
+('Paul Rudd', '1969-04-06', 'rudd.jpg'),               -- 79
+('Brie Larson', '1989-10-01', 'larson.jpg'),           -- 80
+('Timothée Chalamet', '1995-12-27', 'chalamet.jpg'),   -- 81
+('Rebecca Ferguson', '1983-10-19', 'ferguson.jpg'),    -- 82
+('Jason Momoa', '1979-08-01', 'momoa.jpg'),            -- 83
+('Robert Pattinson', '1986-05-13', 'pattinson.jpg'),   -- 84
+('Zoe Kravitz', '1988-12-01', 'kravitz.jpg'),          -- 85
+('Paul Dano', '1984-06-19', 'dano.jpg'),               -- 86
+('Colin Farrell', '1976-05-31', 'farrell.jpg'),        -- 87
+('Anya Taylor-Joy', '1996-04-16', 'taylorjoy.jpg'),    -- 88
+('Ethan Hawke', '1970-11-06', 'hawke.jpg'),            -- 89
+('Bill Murray', '1950-09-21', 'murray.jpg'),           -- 90
+('Saoirse Ronan', '1994-04-12', 'ronan.jpg'),          -- 91
+('Tim Roth', '1961-05-14', 'roth.jpg'),                -- 92
+('Harvey Keitel', '1939-05-13', 'keitel.jpg'),         -- 93
+('Steve Buscemi', '1957-12-13', 'buscemi.jpg'),        -- 94
+('John Travolta', '1954-02-18', 'travolta.jpg'),       -- 95
+('Diane Keaton', '1946-01-05', 'keaton.jpg'),          -- 96
+('Robert Duvall', '1931-01-05', 'duvall.jpg'),         -- 97
+('James Caan', '1940-03-26', 'caan.jpg'),              -- 98
+('Talia Shire', '1946-04-25', 'shire.jpg'),            -- 99
+('Joe Pesci', '1943-02-09', 'pesci.jpg');              -- 100
 
 -- ==========================================
 -- 4. THE MAIN ATTRACTION: 100 MOVIES
 -- ==========================================
 INSERT INTO Movies (Title, ReleaseYear, Runtime, Description, PosterURL, ContentRating) VALUES 
 -- The Original 50
-('Inception', 2010, 148, 'A thief steals corporate secrets through dream-sharing technology.', 'inception.png', 'PG-13'),
-('The Dark Knight', 2008, 152, 'The Joker wreaks havoc on Gotham.', 'darkknight.png', 'PG-13'),
-('The Dark Knight Rises', 2012, 164, 'Batman comes out of exile to face Bane.', 'tdkr.png', 'PG-13'),
-('Interstellar', 2014, 169, 'Explorers travel through a wormhole in space.', 'interstellar.png', 'PG-13'),
-('Oppenheimer', 2023, 180, 'The story of J. Robert Oppenheimer.', 'oppenheimer.png', 'R'),
-('Pulp Fiction', 1994, 154, 'The lives of mob hitmen and a boxer intertwine.', 'pulp.png', 'R'),
-('Django Unchained', 2012, 165, 'A freed slave sets out to rescue his wife.', 'django.png', 'R'),
-('Inglourious Basterds', 2009, 153, 'Jewish soldiers plot to assassinate Nazi leaders.', 'basterds.png', 'R'),
-('The Hateful Eight', 2015, 167, 'Strangers seek refuge from a blizzard in Wyoming.', 'hateful.png', 'R'),
-('The Wolf of Wall Street', 2013, 180, 'The true story of Jordan Belfort.', 'wolf.png', 'R'),
-('The Departed', 2006, 151, 'An undercover cop and a mole attempt to identify each other.', 'departed.png', 'R'),
-('Shutter Island', 2010, 138, 'A U.S. Marshal investigates the disappearance of a murderer.', 'shutter.png', 'R'),
-('Goodfellas', 1990, 145, 'The story of Henry Hill and his life in the mob.', 'goodfellas.png', 'R'),
-('Casino', 1995, 178, 'A tale of greed, deception, and power in Las Vegas.', 'casino.png', 'R'),
-('Se7en', 1995, 127, 'Detectives hunt a serial killer who uses the seven deadly sins.', 'seven.png', 'R'),
-('Fight Club', 1999, 139, 'An office worker forms an underground fight club.', 'fightclub.png', 'R'),
-('The Curious Case of Benjamin Button', 2008, 166, 'A man ages in reverse.', 'benjamin.png', 'PG-13'),
-('Catch Me If You Can', 2002, 141, 'An FBI agent pursues a young con artist.', 'catchme.png', 'PG-13'),
-('Saving Private Ryan', 1998, 169, 'Soldiers go behind enemy lines to retrieve a paratrooper.', 'ryan.png', 'R'),
-('Jurassic Park', 1993, 127, 'A theme park suffers a major power breakdown allowing dinosaurs to roam.', 'jurassic.png', 'PG-13'),
-('Titanic', 1997, 194, 'An aristocrat falls in love with a poor artist aboard the Titanic.', 'titanic.png', 'PG-13'),
-('Avatar', 2009, 162, 'A Marine on Pandora becomes torn between two worlds.', 'avatar.png', 'PG-13'),
-('Terminator 2: Judgment Day', 1991, 137, 'A cyborg protects a boy from a more advanced cyborg.', 't2.png', 'R'),
-('LOTR: The Fellowship of the Ring', 2001, 178, 'A Hobbit sets out on a journey to destroy a ring.', 'lotr1.png', 'PG-13'),
-('LOTR: The Return of the King', 2003, 201, 'The final battle for Middle-earth begins.', 'lotr3.png', 'PG-13'),
-('Barbie', 2023, 114, 'Barbie suffers a crisis that leads her to question her world.', 'barbie.png', 'PG-13'),
-('Little Women', 2019, 135, 'Jo March reflects back and forth on her life.', 'littlewomen.png', 'PG'),
-('Dune', 2021, 155, 'A noble family becomes embroiled in a war for control.', 'dune.png', 'PG-13'),
-('Dune: Part Two', 2024, 166, 'Paul Atreides unites with Chani and the Fremen.', 'dune2.png', 'PG-13'),
-('Blade Runner 2049', 2017, 164, 'A young blade runner discovers a long-buried secret.', 'br2049.png', 'R'),
-('Alien', 1979, 117, 'The crew of a spacecraft encounter a deadly lifeform.', 'alien.png', 'R'),
-('The Martian', 2015, 144, 'An astronaut becomes stranded on Mars and must survive.', 'martian.png', 'PG-13'),
-('Prometheus', 2012, 124, 'Explorers discover a clue to the origins of mankind.', 'prometheus.png', 'R'),
-('La La Land', 2016, 128, 'A jazz pianist and an aspiring actress fall in love.', 'lalaland.png', 'PG-13'),
-('The Matrix', 1999, 136, 'A computer hacker learns the true nature of his reality.', 'matrix.png', 'R'),
-('The Matrix Reloaded', 2003, 138, 'Neo and the rebel leaders fight to save Zion.', 'matrix2.png', 'R'),
-('Once Upon a Time... in Hollywood', 2019, 161, 'A faded actor and his stunt double strive to achieve fame.', 'hollywood.png', 'R'),
-('Edge of Tomorrow', 2014, 113, 'A soldier fighting aliens gets to relive the same day.', 'edge.png', 'PG-13'),
-('The Devil Wears Prada', 2006, 109, 'A new graduate lands a job as an assistant to a demanding editor.', 'prada.png', 'PG-13'),
-('Black Swan', 2010, 108, 'A committed dancer struggles to maintain her sanity.', 'blackswan.png', 'R'),
-('Marriage Story', 2019, 137, 'A grueling divorce pushes a family to their breaking point.', 'marriage.png', 'R'),
-('Arrival', 2016, 116, 'A linguist works with the military to communicate with alien lifeforms.', 'arrival.png', 'PG-13'),
-('Sicario', 2015, 121, 'An FBI agent is enlisted in the escalating war against drugs.', 'sicario.png', 'R'),
-('The Post', 2017, 116, 'A cover-up pushes the countrys first female newspaper publisher.', 'post.png', 'PG-13'),
-('Don''t Look Up', 2021, 138, 'Two low-level astronomers must go on a media tour.', 'dontlookup.png', 'R'),
-('A Quiet Place', 2018, 90, 'A family must live in silence to avoid mysterious creatures.', 'quietplace.png', 'PG-13'),
-('V for Vendetta', 2005, 132, 'A shadowy freedom fighter plots to overthrow a tyrannical government.', 'vendetta.png', 'R'),
-('Gravity', 2013, 91, 'Two astronauts survive after an accident leaves them stranded.', 'gravity.png', 'PG-13'),
-('Ocean''s Eleven', 2001, 116, 'Danny Ocean plans to rob three Las Vegas casinos simultaneously.', 'oceans.png', 'PG-13'),
-('The Prestige', 2006, 130, 'Two stage magicians engage in a battle to create the ultimate illusion.', 'prestige.png', 'PG-13'),
+('Inception', 2010, 148, 'A thief steals corporate secrets through dream-sharing technology.', 'inception.jpg', 'PG-13'),
+('The Dark Knight', 2008, 152, 'The Joker wreaks havoc on Gotham.', 'darkknight.jpg', 'PG-13'),
+('The Dark Knight Rises', 2012, 164, 'Batman comes out of exile to face Bane.', 'tdkr.jpg', 'PG-13'),
+('Interstellar', 2014, 169, 'Explorers travel through a wormhole in space.', 'interstellar.jpg', 'PG-13'),
+('Oppenheimer', 2023, 180, 'The story of J. Robert Oppenheimer.', 'oppenheimer.jpg', 'R'),
+('Pulp Fiction', 1994, 154, 'The lives of mob hitmen and a boxer intertwine.', 'pulp.jpg', 'R'),
+('Django Unchained', 2012, 165, 'A freed slave sets out to rescue his wife.', 'django.jpg', 'R'),
+('Inglourious Basterds', 2009, 153, 'Jewish soldiers plot to assassinate Nazi leaders.', 'basterds.jpg', 'R'),
+('The Hateful Eight', 2015, 167, 'Strangers seek refuge from a blizzard in Wyoming.', 'hateful.jpg', 'R'),
+('The Wolf of Wall Street', 2013, 180, 'The true story of Jordan Belfort.', 'wolf.jpg', 'R'),
+('The Departed', 2006, 151, 'An undercover cop and a mole attempt to identify each other.', 'departed.jpg', 'R'),
+('Shutter Island', 2010, 138, 'A U.S. Marshal investigates the disappearance of a murderer.', 'shutter.jpg', 'R'),
+('Goodfellas', 1990, 145, 'The story of Henry Hill and his life in the mob.', 'goodfellas.jpg', 'R'),
+('Casino', 1995, 178, 'A tale of greed, deception, and power in Las Vegas.', 'casino.jpg', 'R'),
+('Se7en', 1995, 127, 'Detectives hunt a serial killer who uses the seven deadly sins.', 'seven.jpg', 'R'),
+('Fight Club', 1999, 139, 'An office worker forms an underground fight club.', 'fightclub.jpg', 'R'),
+('The Curious Case of Benjamin Button', 2008, 166, 'A man ages in reverse.', 'benjamin.jpg', 'PG-13'),
+('Catch Me If You Can', 2002, 141, 'An FBI agent pursues a young con artist.', 'catchme.jpg', 'PG-13'),
+('Saving Private Ryan', 1998, 169, 'Soldiers go behind enemy lines to retrieve a paratrooper.', 'ryan.jpg', 'R'),
+('Jurassic Park', 1993, 127, 'A theme park suffers a major power breakdown allowing dinosaurs to roam.', 'jurassic.jpg', 'PG-13'),
+('Titanic', 1997, 194, 'An aristocrat falls in love with a poor artist aboard the Titanic.', 'titanic.jpg', 'PG-13'),
+('Avatar', 2009, 162, 'A Marine on Pandora becomes torn between two worlds.', 'avatar.jpg', 'PG-13'),
+('Terminator 2: Judgment Day', 1991, 137, 'A cyborg protects a boy from a more advanced cyborg.', 't2.jpg', 'R'),
+('LOTR: The Fellowship of the Ring', 2001, 178, 'A Hobbit sets out on a journey to destroy a ring.', 'lotr1.jpg', 'PG-13'),
+('LOTR: The Return of the King', 2003, 201, 'The final battle for Middle-earth begins.', 'lotr3.jpg', 'PG-13'),
+('Barbie', 2023, 114, 'Barbie suffers a crisis that leads her to question her world.', 'barbie.jpg', 'PG-13'),
+('Little Women', 2019, 135, 'Jo March reflects back and forth on her life.', 'littlewomen.jpg', 'PG'),
+('Dune', 2021, 155, 'A noble family becomes embroiled in a war for control.', 'dune.jpg', 'PG-13'),
+('Dune: Part Two', 2024, 166, 'Paul Atreides unites with Chani and the Fremen.', 'dune2.jpg', 'PG-13'),
+('Blade Runner 2049', 2017, 164, 'A young blade runner discovers a long-buried secret.', 'br2049.jpg', 'R'),
+('Alien', 1979, 117, 'The crew of a spacecraft encounter a deadly lifeform.', 'alien.jpg', 'R'),
+('The Martian', 2015, 144, 'An astronaut becomes stranded on Mars and must survive.', 'martian.jpg', 'PG-13'),
+('Prometheus', 2012, 124, 'Explorers discover a clue to the origins of mankind.', 'prometheus.jpg', 'R'),
+('La La Land', 2016, 128, 'A jazz pianist and an aspiring actress fall in love.', 'lalaland.jpg', 'PG-13'),
+('The Matrix', 1999, 136, 'A computer hacker learns the true nature of his reality.', 'matrix.jpg', 'R'),
+('The Matrix Reloaded', 2003, 138, 'Neo and the rebel leaders fight to save Zion.', 'matrix2.jpg', 'R'),
+('Once Upon a Time... in Hollywood', 2019, 161, 'A faded actor and his stunt double strive to achieve fame.', 'hollywood.jpg', 'R'),
+('Edge of Tomorrow', 2014, 113, 'A soldier fighting aliens gets to relive the same day.', 'edge.jpg', 'PG-13'),
+('The Devil Wears Prada', 2006, 109, 'A new graduate lands a job as an assistant to a demanding editor.', 'prada.jpg', 'PG-13'),
+('Black Swan', 2010, 108, 'A committed dancer struggles to maintain her sanity.', 'blackswan.jpg', 'R'),
+('Marriage Story', 2019, 137, 'A grueling divorce pushes a family to their breaking point.', 'marriage.jpg', 'R'),
+('Arrival', 2016, 116, 'A linguist works with the military to communicate with alien lifeforms.', 'arrival.jpg', 'PG-13'),
+('Sicario', 2015, 121, 'An FBI agent is enlisted in the escalating war against drugs.', 'sicario.jpg', 'R'),
+('The Post', 2017, 116, 'A cover-up pushes the countrys first female newspaper publisher.', 'post.jpg', 'PG-13'),
+('Don''t Look Up', 2021, 138, 'Two low-level astronomers must go on a media tour.', 'dontlookup.jpg', 'R'),
+('A Quiet Place', 2018, 90, 'A family must live in silence to avoid mysterious creatures.', 'quietplace.jpg', 'PG-13'),
+('V for Vendetta', 2005, 132, 'A shadowy freedom fighter plots to overthrow a tyrannical government.', 'vendetta.jpg', 'R'),
+('Gravity', 2013, 91, 'Two astronauts survive after an accident leaves them stranded.', 'gravity.jpg', 'PG-13'),
+('Ocean''s Eleven', 2001, 116, 'Danny Ocean plans to rob three Las Vegas casinos simultaneously.', 'oceans.jpg', 'PG-13'),
+('The Prestige', 2006, 130, 'Two stage magicians engage in a battle to create the ultimate illusion.', 'prestige.jpg', 'PG-13'),
 -- The Expansion 50
-('The Godfather', 1972, 175, 'The aging patriarch of an organized crime dynasty transfers control to his reluctant son.', 'godfather.png', 'R'),
-('The Godfather: Part II', 1974, 202, 'The early life and career of Vito Corleone in 1920s New York City is portrayed.', 'godfather2.png', 'R'),
-('Star Wars: Episode IV - A New Hope', 1977, 121, 'Luke Skywalker joins forces with a Jedi Knight.', 'starwars4.png', 'PG'),
-('Star Wars: Episode V - The Empire Strikes Back', 1980, 124, 'The Rebels are brutally overpowered by the Empire.', 'starwars5.png', 'PG'),
-('LOTR: The Two Towers', 2002, 179, 'Frodo and Sam edge closer to Mordor with the help of Gollum.', 'lotr2.png', 'PG-13'),
-('Gladiator', 2000, 155, 'A former Roman General sets out to exact vengeance.', 'gladiator.png', 'R'),
-('Joker', 2019, 122, 'A mentally troubled stand-up comedian embarks on a downward spiral.', 'joker.png', 'R'),
-('The Avengers', 2012, 143, 'Earths mightiest heroes must come together.', 'avengers.png', 'PG-13'),
-('Avengers: Infinity War', 2018, 149, 'The Avengers must be willing to sacrifice all to defeat Thanos.', 'infinitywar.png', 'PG-13'),
-('Avengers: Endgame', 2019, 181, 'The remaining Avengers assemble once more.', 'endgame.png', 'PG-13'),
-('Iron Man', 2008, 126, 'Billionaire engineer Tony Stark creates a unique weaponized suit.', 'ironman.png', 'PG-13'),
-('Batman Begins', 2005, 140, 'After training with his mentor, Batman begins his fight.', 'batmanbegins.png', 'PG-13'),
-('Guardians of the Galaxy', 2014, 121, 'A group of intergalactic criminals must pull together.', 'gotg.png', 'PG-13'),
-('Black Panther', 2018, 134, 'T''Challa must step forward to lead his people into a new future.', 'blackpanther.png', 'PG-13'),
-('Spider-Man: No Way Home', 2021, 148, 'With Spider-Mans identity now revealed, Peter asks Doctor Strange for help.', 'nowayhome.png', 'PG-13'),
-('The Batman', 2022, 176, 'When a sadistic serial killer begins murdering key political figures in Gotham.', 'thebatman.png', 'PG-13'),
-('Mad Max: Fury Road', 2015, 120, 'In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler.', 'furyroad.png', 'R'),
-('Parasite', 2019, 132, 'Greed and class discrimination threaten the newly formed symbiotic relationship.', 'parasite.png', 'R'),
-('Snowpiercer', 2013, 126, 'In a future where a failed climate-change experiment has killed all life.', 'snowpiercer.png', 'R'),
-('1917', 2019, 119, 'April 6th, 1917. Two young British soldiers are given a seemingly impossible mission.', '1917.png', 'R'),
-('Skyfall', 2012, 143, 'James Bonds loyalty to M is tested when her past comes back to haunt her.', 'skyfall.png', 'PG-13'),
-('Casino Royale', 2006, 144, 'After earning 00 status and a licence to kill, agent James Bond sets out.', 'casinoroyale.png', 'PG-13'),
-('No Country for Old Men', 2007, 122, 'Violence and mayhem ensue after a hunter stumbles upon a drug deal.', 'nocountry.png', 'R'),
-('The Big Lebowski', 1998, 117, 'Jeff "The Dude" Lebowski, mistaken for a millionaire.', 'lebowski.png', 'R'),
-('Fargo', 1996, 98, 'Jerry Lundegaard''s inept crime falls apart due to his and his henchmen''s bungling.', 'fargo.png', 'R'),
-('There Will Be Blood', 2007, 158, 'A story of family, religion, hatred, oil and madness.', 'twbb.png', 'R'),
-('The Grand Budapest Hotel', 2014, 99, 'A writer encounters the owner of an aging high-class hotel.', 'grandbudapest.png', 'R'),
-('Pan''s Labyrinth', 2006, 118, 'In the Falangist Spain of 1944, a girl escapes into an eerie but captivating fantasy world.', 'panslabyrinth.png', 'R'),
-('The Shape of Water', 2017, 123, 'At a top secret research facility in the 1960s, a lonely janitor forms a unique relationship.', 'shapeofwater.png', 'R'),
-('Birdman', 2014, 119, 'A washed-up superhero actor attempts to revive his fading career.', 'birdman.png', 'R'),
-('The Revenant', 2015, 156, 'A frontiersman on a fur trading expedition in the 1820s fights for survival.', 'revenant.png', 'R'),
-('Children of Men', 2006, 109, 'In 2027, in a chaotic world in which women have become somehow infertile.', 'childrenofmen.png', 'R'),
-('Roma', 2018, 135, 'A year in the life of a middle-class family''s maid in Mexico City.', 'roma.png', 'R'),
-('Get Out', 2017, 104, 'A young African-American visits his white girlfriend''s parents for the weekend.', 'getout.png', 'R'),
-('Us', 2019, 116, 'A family''s serene beach vacation turns to chaos when their doppelgängers appear.', 'us.png', 'R'),
-('Nope', 2022, 130, 'The residents of a lonely gulch in inland California bear witness to an uncanny discovery.', 'nope.png', 'R'),
-('Knives Out', 2019, 130, 'A detective investigates the death of a patriarch of an eccentric family.', 'knivesout.png', 'PG-13'),
-('Glass Onion', 2022, 139, 'Tech billionaire Miles Bron invites his friends for a getaway on his private Greek island.', 'glassonion.png', 'PG-13'),
-('Thor: Ragnarok', 2017, 130, 'Imprisoned on the planet Sakaar, Thor must race against time.', 'ragnarok.png', 'PG-13'),
-('Jojo Rabbit', 2019, 108, 'A young boy in Hitler''s army finds out his mother is hiding a Jewish girl.', 'jojorabbit.png', 'PG-13'),
-('The Shining', 1980, 146, 'A family heads to an isolated hotel for the winter where a sinister presence influences the father.', 'shining.png', 'R'),
-('2001: A Space Odyssey', 1968, 149, 'After discovering a mysterious artifact, a quest is set with a sentient computer.', '2001.png', 'G'),
-('A Clockwork Orange', 1971, 136, 'In the future, a sadistic gang leader is imprisoned and volunteers for a conduct-aversion experiment.', 'clockwork.png', 'R'),
-('Unforgiven', 1992, 130, 'Retired Old West gunslinger William Munny reluctantly takes on one last job.', 'unforgiven.png', 'R'),
-('Million Dollar Baby', 2004, 132, 'A determined woman works with a hardened boxing trainer.', 'milliondollar.png', 'PG-13'),
-('Gran Torino', 2008, 116, 'Disgruntled Korean War veteran Walt Kowalski sets out to reform his neighbor.', 'grantorino.png', 'R'),
-('Kill Bill: Vol. 1', 2003, 111, 'After awakening from a four-year coma, a former assassin wreaks vengeance.', 'killbill1.png', 'R'),
-('Kill Bill: Vol. 2', 2004, 137, 'The Bride continues her quest of vengeance against her former boss.', 'killbill2.png', 'R'),
-('Reservoir Dogs', 1992, 99, 'When a simple jewelry heist goes horribly wrong, the surviving criminals suspect one is a police informant.', 'reservoirdogs.png', 'R'),
-('Star Wars: Episode VII - The Force Awakens', 2015, 138, 'As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo.', 'forceawakens.png', 'PG-13');
+('The Godfather', 1972, 175, 'The aging patriarch of an organized crime dynasty transfers control to his reluctant son.', 'godfather.jpg', 'R'),
+('The Godfather: Part II', 1974, 202, 'The early life and career of Vito Corleone in 1920s New York City is portrayed.', 'godfather2.jpg', 'R'),
+('Star Wars: Episode IV - A New Hope', 1977, 121, 'Luke Skywalker joins forces with a Jedi Knight.', 'starwars4.jpg', 'PG'),
+('Star Wars: Episode V - The Empire Strikes Back', 1980, 124, 'The Rebels are brutally overpowered by the Empire.', 'starwars5.jpg', 'PG'),
+('LOTR: The Two Towers', 2002, 179, 'Frodo and Sam edge closer to Mordor with the help of Gollum.', 'lotr2.jpg', 'PG-13'),
+('Gladiator', 2000, 155, 'A former Roman General sets out to exact vengeance.', 'gladiator.jpg', 'R'),
+('Joker', 2019, 122, 'A mentally troubled stand-up comedian embarks on a downward spiral.', 'joker.jpg', 'R'),
+('The Avengers', 2012, 143, 'Earths mightiest heroes must come together.', 'avengers.jpg', 'PG-13'),
+('Avengers: Infinity War', 2018, 149, 'The Avengers must be willing to sacrifice all to defeat Thanos.', 'infinitywar.jpg', 'PG-13'),
+('Avengers: Endgame', 2019, 181, 'The remaining Avengers assemble once more.', 'endgame.jpg', 'PG-13'),
+('Iron Man', 2008, 126, 'Billionaire engineer Tony Stark creates a unique weaponized suit.', 'ironman.jpg', 'PG-13'),
+('Batman Begins', 2005, 140, 'After training with his mentor, Batman begins his fight.', 'batmanbegins.jpg', 'PG-13'),
+('Guardians of the Galaxy', 2014, 121, 'A group of intergalactic criminals must pull together.', 'gotg.jpg', 'PG-13'),
+('Black Panther', 2018, 134, 'T''Challa must step forward to lead his people into a new future.', 'blackpanther.jpg', 'PG-13'),
+('Spider-Man: No Way Home', 2021, 148, 'With Spider-Mans identity now revealed, Peter asks Doctor Strange for help.', 'nowayhome.jpg', 'PG-13'),
+('The Batman', 2022, 176, 'When a sadistic serial killer begins murdering key political figures in Gotham.', 'thebatman.jpg', 'PG-13'),
+('Mad Max: Fury Road', 2015, 120, 'In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler.', 'furyroad.jpg', 'R'),
+('Parasite', 2019, 132, 'Greed and class discrimination threaten the newly formed symbiotic relationship.', 'parasite.jpg', 'R'),
+('Snowpiercer', 2013, 126, 'In a future where a failed climate-change experiment has killed all life.', 'snowpiercer.jpg', 'R'),
+('1917', 2019, 119, 'April 6th, 1917. Two young British soldiers are given a seemingly impossible mission.', '1917.jpg', 'R'),
+('Skyfall', 2012, 143, 'James Bonds loyalty to M is tested when her past comes back to haunt her.', 'skyfall.jpg', 'PG-13'),
+('Casino Royale', 2006, 144, 'After earning 00 status and a licence to kill, agent James Bond sets out.', 'casinoroyale.jpg', 'PG-13'),
+('No Country for Old Men', 2007, 122, 'Violence and mayhem ensue after a hunter stumbles upon a drug deal.', 'nocountry.jpg', 'R'),
+('The Big Lebowski', 1998, 117, 'Jeff "The Dude" Lebowski, mistaken for a millionaire.', 'lebowski.jpg', 'R'),
+('Fargo', 1996, 98, 'Jerry Lundegaard''s inept crime falls apart due to his and his henchmen''s bungling.', 'fargo.jpg', 'R'),
+('There Will Be Blood', 2007, 158, 'A story of family, religion, hatred, oil and madness.', 'twbb.jpg', 'R'),
+('The Grand Budapest Hotel', 2014, 99, 'A writer encounters the owner of an aging high-class hotel.', 'grandbudapest.jpg', 'R'),
+('Pan''s Labyrinth', 2006, 118, 'In the Falangist Spain of 1944, a girl escapes into an eerie but captivating fantasy world.', 'panslabyrinth.jpg', 'R'),
+('The Shape of Water', 2017, 123, 'At a top secret research facility in the 1960s, a lonely janitor forms a unique relationship.', 'shapeofwater.jpg', 'R'),
+('Birdman', 2014, 119, 'A washed-up superhero actor attempts to revive his fading career.', 'birdman.jpg', 'R'),
+('The Revenant', 2015, 156, 'A frontiersman on a fur trading expedition in the 1820s fights for survival.', 'revenant.jpg', 'R'),
+('Children of Men', 2006, 109, 'In 2027, in a chaotic world in which women have become somehow infertile.', 'childrenofmen.jpg', 'R'),
+('Roma', 2018, 135, 'A year in the life of a middle-class family''s maid in Mexico City.', 'roma.jpg', 'R'),
+('Get Out', 2017, 104, 'A young African-American visits his white girlfriend''s parents for the weekend.', 'getout.jpg', 'R'),
+('Us', 2019, 116, 'A family''s serene beach vacation turns to chaos when their doppelgängers appear.', 'us.jpg', 'R'),
+('Nope', 2022, 130, 'The residents of a lonely gulch in inland California bear witness to an uncanny discovery.', 'nope.jpg', 'R'),
+('Knives Out', 2019, 130, 'A detective investigates the death of a patriarch of an eccentric family.', 'knivesout.jpg', 'PG-13'),
+('Glass Onion', 2022, 139, 'Tech billionaire Miles Bron invites his friends for a getaway on his private Greek island.', 'glassonion.jpg', 'PG-13'),
+('Thor: Ragnarok', 2017, 130, 'Imprisoned on the planet Sakaar, Thor must race against time.', 'ragnarok.jpg', 'PG-13'),
+('Jojo Rabbit', 2019, 108, 'A young boy in Hitler''s army finds out his mother is hiding a Jewish girl.', 'jojorabbit.jpg', 'PG-13'),
+('The Shining', 1980, 146, 'A family heads to an isolated hotel for the winter where a sinister presence influences the father.', 'shining.jpg', 'R'),
+('2001: A Space Odyssey', 1968, 149, 'After discovering a mysterious artifact, a quest is set with a sentient computer.', '2001.jpg', 'G'),
+('A Clockwork Orange', 1971, 136, 'In the future, a sadistic gang leader is imprisoned and volunteers for a conduct-aversion experiment.', 'clockwork.jpg', 'R'),
+('Unforgiven', 1992, 130, 'Retired Old West gunslinger William Munny reluctantly takes on one last job.', 'unforgiven.jpg', 'R'),
+('Million Dollar Baby', 2004, 132, 'A determined woman works with a hardened boxing trainer.', 'milliondollar.jpg', 'PG-13'),
+('Gran Torino', 2008, 116, 'Disgruntled Korean War veteran Walt Kowalski sets out to reform his neighbor.', 'grantorino.jpg', 'R'),
+('Kill Bill: Vol. 1', 2003, 111, 'After awakening from a four-year coma, a former assassin wreaks vengeance.', 'killbill1.jpg', 'R'),
+('Kill Bill: Vol. 2', 2004, 137, 'The Bride continues her quest of vengeance against her former boss.', 'killbill2.jpg', 'R'),
+('Reservoir Dogs', 1992, 99, 'When a simple jewelry heist goes horribly wrong, the surviving criminals suspect one is a police informant.', 'reservoirdogs.jpg', 'R'),
+('Star Wars: Episode VII - The Force Awakens', 2015, 138, 'As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo.', 'forceawakens.jpg', 'PG-13');
 
 -- ==========================================
 -- 5. CONNECTING DIRECTORS TO MOVIES

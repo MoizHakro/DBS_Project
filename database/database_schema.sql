@@ -5,12 +5,13 @@ CREATE DATABASE IF NOT EXISTS Movie_Management;
 USE Movie_Management;
 
 -- ==========================================
--- PART 1: THE PARENT TABLES
+-- PART 1: CREATE PARENT TABLES
 -- ==========================================
 
 CREATE TABLE Users (
     UserID INT AUTO_INCREMENT PRIMARY KEY,
-    Username VARCHAR(50) NOT NULL,
+    Username VARCHAR(50) NOT NULL UNIQUE,
+    Password VARCHAR(255) NOT NULL,
     JoinDate DATE
 );
 
@@ -21,7 +22,8 @@ CREATE TABLE Movies (
     Runtime INT, 
     Description TEXT,
     PosterURL VARCHAR(255),
-    ContentRating VARCHAR(10)
+    ContentRating VARCHAR(10),
+    IMDBRating DECIMAL(3, 1)
 );
 
 CREATE TABLE Actors (
@@ -33,7 +35,7 @@ CREATE TABLE Actors (
 
 CREATE TABLE Genres (
     GenreID INT AUTO_INCREMENT PRIMARY KEY,
-    GenreName VARCHAR(50) NOT NULL
+    GenreName VARCHAR(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE Directors (
@@ -43,48 +45,48 @@ CREATE TABLE Directors (
 );
 
 -- ==========================================
--- PART 2: THE BRIDGE TABLES (Relationships)
+-- PART 2: CREATE BRIDGE TABLES (With Cascades)
 -- ==========================================
 
 CREATE TABLE Movie_Cast (
     CastID INT AUTO_INCREMENT PRIMARY KEY,
     MovieID INT,
     ActorID INT,
-    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID),
-    FOREIGN KEY (ActorID) REFERENCES Actors(ActorID)
+    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID) ON DELETE CASCADE,
+    FOREIGN KEY (ActorID) REFERENCES Actors(ActorID) ON DELETE CASCADE
 );
 
 CREATE TABLE Watchlist (
     WatchlistID INT AUTO_INCREMENT PRIMARY KEY,
     UserID INT,
     MovieID INT,
-    FOREIGN KEY (UserID) REFERENCES Users(UserID),
-    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID)
+    FOREIGN KEY (UserID) REFERENCES Users(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID) ON DELETE CASCADE
 );
 
 CREATE TABLE Movie_Genres (
     MovieGenreID INT AUTO_INCREMENT PRIMARY KEY,
     MovieID INT,
     GenreID INT,
-    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID),
-    FOREIGN KEY (GenreID) REFERENCES Genres(GenreID)
+    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID) ON DELETE CASCADE,
+    FOREIGN KEY (GenreID) REFERENCES Genres(GenreID) ON DELETE CASCADE
 );
 
 CREATE TABLE Movie_Directors (
     MovieDirectorID INT AUTO_INCREMENT PRIMARY KEY,
     MovieID INT,
     DirectorID INT,
-    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID),
-    FOREIGN KEY (DirectorID) REFERENCES Directors(DirectorID)
+    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID) ON DELETE CASCADE,
+    FOREIGN KEY (DirectorID) REFERENCES Directors(DirectorID) ON DELETE CASCADE
 );
 
 CREATE TABLE Reviews (
     ReviewID INT AUTO_INCREMENT PRIMARY KEY,
     UserID INT,
     MovieID INT,
-    Rating INT CHECK (Rating >= 1 AND Rating <= 10),
+    Rating DECIMAL(3, 1) CHECK (Rating >= 1 AND Rating <= 10),
     ReviewText TEXT,
     ReviewDate DATE,
-    FOREIGN KEY (UserID) REFERENCES Users(UserID),
-    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID)
+    FOREIGN KEY (UserID) REFERENCES Users(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID) ON DELETE CASCADE
 );
